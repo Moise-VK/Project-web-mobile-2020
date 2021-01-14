@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Vragenlijst - Covid-19</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="Styles.css">
+    <link rel="stylesheet" type="text/css" href="Vragenlijst.css">
+    <style>
+        .structural {
+            position: absolute;
+            left: -9999px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div id="logo">
+                <h1><a href="Home.html" title="Covid-19 contactopsporing">Covid-19</a></h1>
+                <p>contacttracing</p>
+            </div>
+            <nav>
+                <h2 class="structural">Hoofdnavigatie</h2>
+                <ul>
+                    <li><a href="Home.html" title="Home">Home</a></li>
+                    <div class="dropdown">
+                        <li class="active">Vragenlijsten</li>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="Vragenlijst1.html" title="vragenlijst_besmetten">Vragenlijst voor
+                                        besmetten</a></li>
+                                <li><a href="Vragenlijst2.html" title="vragenlijst_contactpersonen">Vragenlijst voor
+                                        contactpersonen</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li><a href="Kaart.html" title="kaart">Kaart</a></li>
+                    <li id="laatste"><a href="Maatregelen.html" title="maatregelen">Maatregelen</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <section class="breadcrumb">
+                <h2 class="structural">Breadcrumb</h2>
+                <p><a href="Home.html">Home</a> > <a href="Vragenlijst2.html">Vragenlijsten contactpersonen</a></p>
+            </section>
+            <section id="intro">
+                <h2>Vragenlijst voor contactpersonen</h2>
+                <p>Hier is de vragenlijst die zo correct mogelijk dient ingevuld te worden.</p>
+            </section>
+            <section id="thankyou">
+                <h2>Bedankt voor het invullen van de vragenlijst</h2>
+            </section>
+            <section id="contact_doctor">
+                <h2>Raadpleeg een arts en laat je testen</h2>
+            </section>
+            <form id="vragenlijst_besmetten">
+                <div>
+                    <label for="leeftijd" class="vraag">Wat is uw leeftijd?</label>
+                    <input type="text" id="leeftijd" value="" required><br>
+                    <span class="error" id="leeftijd_error">Geef uw leeftijd in</span>
+                </div>
+
+                <div id="checked_gender">
+                    <label class="vraag">Wat is uw geslacht?</label>
+                    <label for="man">Man</label>
+                    <input type="radio" id="man" name="gender" value="man">
+                    <label for="vrouw">Vrouw</label>
+                    <input type="radio" id="vrouw" name="gender" value="vrouw"><br>
+                    <span class="error" id="geslacht-error">Duid uw geslacht aan</span>
+                </div>
+
+                <div>
+                    <label class="vraag">Heeft u de laatste dagen last van?</label><br>
+                    <label for="hoest">Droge hoest</label>
+                    <label for="ja_hoest">Ja</label>
+                    <input type="radio" id="ja_hoest" name="symptomen_hoest" value="ja">
+                    <label for="neen_hoest">Neen</label>
+                    <input type="radio" id="neen_hoest" name="symptomen_hoest" value="neen"><br>
+
+                    <label for="keelpijn">Keelpijn</label>
+                    <label for="ja_keelpijn">Ja</label>
+                    <input type="radio" id="ja_keelpijn" name="symptomen_keelpijn" value="ja">
+                    <label for="neen_keelpijn">Neen</label>
+                    <input type="radio" id="neen_keelpijn" name="symptomen_keelpijn" value="neen"><br>
+
+                    <label for="vermoeidheid">Vermoeidheid</label>
+                    <label for="ja_vermoeidheid">Ja</label>
+                    <input type="radio" id="ja_vermoeidheid" name="symptomen_vermoeidheid" value="ja">
+                    <label for="neen_vermoeidheid">Neen</label>
+                    <input type="radio" id="neen_vermoeidheid" name="symptomen_vermoeidheid" value="neen"><br>
+
+                    <label for="spierpijn">Spierpijn</label>
+                    <label for="ja_spierpijn">Ja</label>
+                    <input type="radio" id="ja_spierpijn" name="symptomen_spierpijn" value="ja">
+                    <label for="neen_spierpijn">Neen</label>
+                    <input type="radio" id="neen_spierpijn" name="symptomen_spierpijn" value="neen"><br>
+
+                    <label for="hoofdpijn">Hoofdpijn</label>
+                    <label for="ja_hoofdpijn">Ja</label>
+                    <input type="radio" id="ja_hoofdpijn" name="symptomen_hoofdpijn" value="ja">
+                    <label for="neen_hoofdpijn">Neen</label>
+                    <input type="radio" id="neen_hoofdpijn" name="symptomen_hoofdpijn" value="neen"><br>
+
+                    <label for="diarree">Diarree</label>
+                    <label for="ja_diarree">Ja</label>
+                    <input type="radio" id="ja_diarree" name="symptomen_diarree" value="ja">
+                    <label for="neen_diarree">Neen</label>
+                    <input type="radio" id="neen_diarree" name="symptomen_diarree" value="neen"><br>
+
+                    <label for="smaak">Verminderde smaak en reuk</label>
+                    <label for="ja_smaak">Ja</label>
+                    <input type="radio" id="ja_smaak" name="symptomen_smaak" value="ja">
+                    <label for="neen_smaak">Neen</label>
+                    <input type="radio" id="neen_smaak" name="symptomen_smaak" value="neen"><br>
+
+                    <span class="error" id="symptomen-error">Duid overal ja of neen aan</span>
+                </div>
+                <input type="submit" value="Indienen" class="button">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div id="links">
+                <p>Bij vragen kan u ons contacteren op <a href="www.vlaanderen.be">www.vlaanderen.be</a> of via het
+                    nummer 1700</p>
+            </div>
+            <div id="rechts">
+                <a href="https://www.youtube.com/user/gezondheidbelgie" id="yt">logo yt</a>
+                <a href="https://twitter.com/be_gezondheid" id="twitter">logo twitter</a>
+                <a href="https://www.facebook.com/volksgezondheid" id="fb">logo fb</a>
+                <p>©Moïse VanKeymeulen</p>
+            </div>
+        </div>
+    </footer>
+    <script src="Scriptvl2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Vragenlijst - Covid-19</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="Styles.css">
+    <link rel="stylesheet" type="text/css" href="Vragenlijst.css">
+    <style>
+        .structural {
+            position: absolute;
+            left: -9999px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div id="logo">
+                <h1><a href="Home.html" title="Covid-19 contactopsporing">Covid-19</a></h1>
+                <p>contacttracing</p>
+            </div>
+            <nav>
+                <h2 class="structural">Hoofdnavigatie</h2>
+                <ul>
+                    <li><a href="Home.html" title="Home">Home</a></li>
+                    <div class="dropdown">
+                        <li class="active">Vragenlijsten</li>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="Vragenlijst1.html" title="vragenlijst_besmetten">Vragenlijst voor
+                                        besmetten</a></li>
+                                <li><a href="Vragenlijst2.html" title="vragenlijst_contactpersonen">Vragenlijst voor
+                                        contactpersonen</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li><a href="Kaart.html" title="kaart">Kaart</a></li>
+                    <li id="laatste"><a href="Maatregelen.html" title="maatregelen">Maatregelen</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <section class="breadcrumb">
+                <h2 class="structural">Breadcrumb</h2>
+                <p><a href="Home.html">Home</a> > <a href="Vragenlijst1.html">Vragenlijsten besmette personen</a></p>
+            </section>
+            <section id="intro">
+                <h2>Vragenlijst voor positief geteste personen</h2>
+                <p>Hier is de vragenlijst die zo correct mogelijk dient ingevuld te worden.</p>
+            </section>
+            <section id="thankyou">
+                <h2>Bedankt voor het invullen van de vragenlijst</h2>
+            </section>
+            <form id="vragenlijst_besmetten">
+                <div>
+                    <label for="leeftijd" class="vraag">Wat is uw leeftijd?</label>
+                    <input type="text" id="leeftijd" value="" required><br>
+                    <span class="error" id="leeftijd_error">Geef uw leeftijd in</span>
+                </div>
+
+                <div id="checked_gender">
+                    <label class="vraag">Wat is uw geslacht?</label>
+                    <label for="man">Man</label>
+                    <input type="radio" id="man" name="gender" value="man">
+                    <label for="vrouw">Vrouw</label>
+                    <input type="radio" id="vrouw" name="gender" value="vrouw"><br>
+                    <span class="error" id="geslacht-error">Duid uw geslacht aan</span>
+                </div>
+
+                <div>
+                    <label class="vraag">Welke symptomen ondervindt u?</label><br>
+                    <label for="hoest">Droge hoest</label>
+                    <input type="checkbox" id="hoest" name="symptomen" value="hoest">
+                    <label for="keelpijn">Keelpijn</label>
+                    <input type="checkbox" id="keelpijn" name="symptomen" value="keelpijn">
+                    <label for="vermoeidheid">Vermoeidheid</label>
+                    <input type="checkbox" id="vermoeidheid" name="symptomen" value="vermoeidheid">
+                    <label for="spierpijn">Spierpijn</label>
+                    <input type="checkbox" id="spierpijn" name="symptomen" value="spierpijn">
+                    <label for="hoofdpijn">Hoofdpijn</label>
+                    <input type="checkbox" id="hoofdpijn" name="symptomen" value="hoofdpijn">
+                    <label for="diarree">Diarree</label>
+                    <input type="checkbox" id="diarree" name="symptomen" value="diarree">
+                    <label for="smaak">Verminderde smaak en reuk</label>
+                    <input type="checkbox" id="smaak" name="symptomen" value="smaak"><br>
+                    <span class="error" id="symptomen-error">Duid 1 of meerdere symptomen aan</span>
+                </div>
+
+                <div>
+                    <label for="datum" class="vraag">Sinds wanneer heeft u de eerste symptomen?</label>
+                    <select id="datum" name="datum">
+                        <option selected="selected" value="-1">Kies...</option>
+                        <option value="vandaag">Vandaag</option>
+                        <option value="gisteren">Gisteren</option>
+                        <option value="eergisteren">Eergisteren</option>
+                    </select> <br>
+                    <span class="error" id="datum-error">Selecteer een datum</span>
+                </div>
+
+                <div>
+                    <label for="woonplaats" class="vraag">Wat is uw woonplaats?</label>
+                    <input type="text" id="woonplaats" name="woonplaats" value=""><br>
+                    <span class="error" id="woonplaats-error">Geef een gemeente in</span>
+                </div>
+
+                <div>
+                    <label class="vraag">Heeft u een 2de verblijplaats?</label>
+                    <label for="ja_verblijf">Ja</label>
+                    <input type="checkbox" id="ja_verblijf" name="2de_verblijf" value="ja">
+                    <label for="neen_verblijf">Neen</label>
+                    <input type="checkbox" id="neen_verblijf" name="2de_verblijf" value="neen"><br>
+                    <span class="error" id="verblijf-error1">Duid juist 1 antwoord aan</span>
+                    <div id="wel_verblijf">
+                        <label for="gemeente_verblijf">gemeente:</label>
+                        <input type="text" id="gemeente_verblijf" name="gemeente" value=""><br>
+                        <label for="straat_verblijf">straat en nummer:</label>
+                        <input type="text" id="straat_verblijf" name="straat" value=""><br>
+                        <span class="error" id="verblijf-error2">Geef een adres in</span>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="vraag">Wat is uw werkplaats?</label><br>
+                    <label for="werkplaats">bedrijf:</label>
+                    <input type="text" id="werkplaats" name="werkplaats" value=""><br>
+                    <label for="gemeente">gemeente:</label>
+                    <input type="text" id="gemeente" name="gemeente" value=""><br>
+                    <label for="straat">straat en nummer:</label>
+                    <input type="text" id="straat" name="straat" value=""><br>
+                    <span class="error" id="werkplaats-error">Vul alle vakken in aub</span>
+                </div>
+
+                <div>
+                    <label class="vraag">Hoe gaat u naar het werk?</label><br>
+                    <label for="auto">Auto</label>
+                    <input type="checkbox" id="auto" name="vervoer" value="auto">
+                    <label for="openbaar_vervoer">Openbaar vervoer</label>
+                    <input type="checkbox" id="openbaar_vervoer" name="vervoer" value="openbaar_vervoer">
+                    <label for="vliegtuig">Fiets, step of te voet</label>
+                    <input type="checkbox" id="fiets" name="vervoer" value="fiets">
+                    <label for="andere">Andere</label>
+                    <input type="checkbox" id="andere" name="vervoer" value="andere"><br>
+                    <input type="text" id="andere_text"> 
+                    <span class="error" id="werk-error">Duid 1 of meerdere vervoersmiddelen aan</span>
+                </div>
+
+                <div>
+                    <label class="vraag">Bent u in de voorbije 2 weken nog op reis geweest?</label>
+                    <label for="ja_reis">Ja</label>
+                    <input type="checkbox" id="ja_reis" name="opreis" value="ja">
+                    <label for="neen_reis">Neen</label>
+                    <input type="checkbox" id="neen_reis" name="opreis" value="neen"><br>
+                    <span class="error" id="reis-error1">Duid juist 1 antwoord aan</span>
+                    <div id="wel_opreis">
+                        <label for="land">Welk land heeft u bezocht?</label>
+                        <input type="text" id="land" name="land" value=""><br>
+                        <label for="stad">Welke stad heeft u bezocht?</label>
+                        <input type="text" id="stad" name="stad" value=""><br>
+                        <label>Via welke manier heeft u gereisd?</label>
+                        <label for="auto_reis">Auto</label>
+                        <input type="checkbox" id="auto_reis" name="voertuig" value="auto">
+                        <label for="openbaar_vervoer_reis">Openbaar vervoer</label>
+                        <input type="checkbox" id="openbaar_vervoer_reis" name="voertuig" value="openbaar_vervoer">
+                        <label for="vliegtuig_reis">Vliegtuig</label>
+                        <input type="checkbox" id="vliegtuig_reis" name="voertuig" value="vliegtuig">
+                        <label for="andere_reis">Andere</label>
+                        <input type="checkbox" id="andere_reis" name="voertuig" value="andere"><br>
+                        <input type="text" id="andere_reis_text" > 
+                        <span class="error" id="reis-error2">Duid 1 of meerdere vervoersmiddelen aan</span>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="vraag">Bent u de voorbije 2 weken nog op publieke plaatsen geweest?</label><br>
+                    <label for="indoor">Indoor evenement</label>
+                    <input type="checkbox" id="indoor" name="publiek" value="auto">
+                    <label for="outdoor">Outdoor evenement</label>
+                    <input type="checkbox" id="outdoor" name="publiek" value="outdoor">
+                    <label for="feest">(familie)Feest</label>
+                    <input type="checkbox" id="feest" name="publiek" value="feest">
+                    <label for="cafe">Café</label>
+                    <input type="checkbox" id="cafe" name="publiek" value="cafe">
+                    <label for="resto">Restaurant</label>
+                    <input type="checkbox" id="resto" name="publiek" value="resto">
+                    <label for="gebed">Ere- of gebedsdiensten</label>
+                    <input type="checkbox" id="gebed" name="publiek" value="gebed"><br>
+                    <span class="error" id="indoor-error">Duid 1 of meerdere plaatsen aan</span>
+                </div>
+                <div id="contactpersonen">
+                    <p class="vraag">Met wie ben je in nauw contact gekomen de laatste 10 dagen? Met nauw conact bedoelen we
+                        langer dan 15min op minder dan 1,5m afstand.
+                    </p>
+                    <label for="voornaam1">Voornaam</label>
+                    <input type="text"  id="voornaam1" value=""><br>
+                    <label for="email">E-mailadres</label>
+                    <input type="email" id="email" value=""><br>
+                    <label for="nummer">Telefoonnummer (optioneel)</label>
+                    <input type="text" id="nummer" value=""><br>
+                    
+                </div>
+
+                <input type="submit" value="Indienen" class="button">
+
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div id="links">
+                <p>Bij vragen kan u ons contacteren op <a href="www.vlaanderen.be">www.vlaanderen.be</a> of via het
+                    nummer 1700</p>
+            </div>
+            <div id="rechts">
+                <a href="https://www.youtube.com/user/gezondheidbelgie" id="yt">logo yt</a>
+                <a href="https://twitter.com/be_gezondheid" id="twitter">logo twitter</a>
+                <a href="https://www.facebook.com/volksgezondheid" id="fb">logo fb</a>
+                <p>©Moïse VanKeymeulen</p>
+            </div>
+        </div>
+    </footer>
+    <script src="Scriptvl1.js"></script>
+</body>
+
+</html>

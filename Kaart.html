@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kaart - Covid-19</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="Styles.css">
+    <style>
+        .structural {
+            position: absolute;
+            left: -9999px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div id="logo">
+                <h1><a href="Home.html" title="Covid-19 contactopsporing">Covid-19</a></h1>
+                <p>contacttracing</p>
+            </div>
+            <nav>
+                <h2 class="structural">Hoofdnavigatie</h2>
+                <ul>
+                    <li><a href="Home.html" title="Home">Home</a></li>
+                    <div class="dropdown">
+                        <li>Vragenlijsten</li>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="Vragenlijst1.html" title="vragenlijst_besmetten">Vragenlijst voor
+                                        besmetten</a></li>
+                                <li><a href="Vragenlijst2.html" title="vragenlijst_contactpersonen">Vragenlijst voor
+                                        contactpersonen</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li><a href="Kaart.html" class="active" title="kaart">Kaart</a></li>
+                    <li id="laatste"><a href="Maatregelen.html" title="maatregelen">Maatregelen</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <section class="breadcrumb">
+                <h2 class="structural">Breadcrumb</h2>
+                <p><a href="Home.html">Home</a> > <a href="Kaart.html">Kaart</a></p>
+            </section>
+            <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=nl&amp;q=Gebroeders%20de%20Smetstraat%201,%209000%20Gent+(Odisee)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div id="links">
+                <p>Bij vragen kan u ons contacteren op <a href="www.vlaanderen.be">www.vlaanderen.be</a> of via het
+                    nummer 1700</p>
+            </div>
+            <div id="rechts">
+                <a href="https://www.youtube.com/user/gezondheidbelgie" id="yt">logo yt</a>
+                <a href="https://twitter.com/be_gezondheid" id="twitter">logo twitter</a>
+                <a href="https://www.facebook.com/volksgezondheid" id="fb">logo fb</a>
+                <p>©Moïse VanKeymeulen</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

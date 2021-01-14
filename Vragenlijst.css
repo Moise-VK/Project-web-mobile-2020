@@ -1,0 +1,38 @@
+main div{
+    padding-bottom: 30px;
+}
+.vraag{
+    font-size: 24px;
+}
+input[type=radio], input[type=checkbox], input[type=submit] {
+	height: auto;
+	margin-right: 10px;
+    width: auto;
+} 
+input[type=radio], input[type=checkbox] {
+	display: inline;
+} 
+.error{
+    font-size: 14px;
+    font-style: italic;
+    color: crimson;
+    display: none;
+}
+#wel_opreis{
+    display: none;
+}
+#wel_verblijf{
+    display: none;
+}
+#andere_reis_text{
+    display: none;
+}
+#andere_text{
+    display: none;
+}
+#thankyou{
+    display: none;
+}
+#contact_doctor{
+    display: none;
+}

@@ -1,0 +1,235 @@
+/*Algemeen*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: 0;
+}
+html{
+    font-size: 18px;
+    font-family: 'Rubik';
+    color: #494949;
+    line-height: 27px;
+}
+body {
+    background-color: #F6F6F6;
+    max-width: 1440px;
+    margin: auto;
+}
+.wrapper {
+    max-width: 1236px;
+    margin: auto;
+}
+h2{
+    color: #000000;
+    font-size: 36px;
+    padding-bottom: 20px;
+}
+h3{
+    color: #000000;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.breadcrumb {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 300;
+}
+.breadcrumb a {
+        color: #000000;
+        text-decoration: none;
+}
+main section{
+    /* 80px tussen elke paragraaf/section */
+    padding-bottom: 80px;
+}
+main ul{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+main ul #ingevoegd{
+    padding-left: 50px;
+}
+main li{
+    padding-bottom: 10px;
+}
+/* Button */
+.button{
+    text-decoration: none;
+    color: #034494;
+    font-size: 28px;
+    padding: 8px 20px 8px 20px;
+    background-color: #E0681B;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #034494;
+    border-radius: 8px;
+}
+
+/*Header*/
+header{
+    background-color: #E0681B;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #034494;
+    height: 126px;
+}
+#logo{
+    color: #034494;
+    background-color: #E0681B;
+    float: left;
+    padding: 26px 14.969px 17px 14.969px;
+    margin-top: 4px;
+    margin-right: 234px;
+}
+nav #laatste{
+    margin-right:0px;
+}
+
+div #logo{
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+    border-color: #106DE0;
+}
+#logo a{
+    text-decoration: none;
+    color: #034494;
+    font-size: 48px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#logo p{
+    padding-top:10px;
+    font-size: 31px;
+    font-weight: 400;
+}
+nav{
+    float: left;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+nav .active {
+    color: #ffffff;
+}
+nav a {
+    text-decoration: none;
+    color: #034494;
+}
+nav li:hover{
+    color: #ffffff;
+}
+nav a:hover{
+    color: #ffffff;
+}
+nav li {
+    font-size: 36px;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 30px;
+    color: #034494;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #034494;
+    min-width: 310px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropdown-content a{
+    font-weight: 400;
+    font-size: 18px;
+    color: #E0681B;
+}
+
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* @media screen and (min-width: 1250px){
+    #dropdown_menu{
+        position: relative;
+        display: inline-block;
+    }
+    #dropdown_menu2{
+    display: none;
+    position: absolute;
+    background-color: #034494;
+    min-width: 310px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    }
+    #dropdown_menu2 a{
+    font-weight: 400;
+    font-size: 18px;
+    color: #E0681B;
+    }
+    #dropdown_menu:hover #dropdown_menu2{
+        display: block;
+    }
+} */
+
+/* Footer */
+footer{
+    background-color: #034494;
+    color: #E0681B;
+    padding-top: 50px;
+}
+footer a{
+    text-decoration: underline;
+    color: #E0681B;
+}
+#links{
+    float: left;
+    width: 370px;
+    padding-right: 630px;
+    padding-top: 20px;
+}
+#yt {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url(pngs/youtube.png) no-repeat center;
+    background-size: cover;
+    white-space: nowrap;
+    text-indent:-9999px;
+    margin-right: 20px;
+}
+#twitter {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url(pngs/twitter.png) no-repeat center;
+    background-size: cover;
+    white-space: nowrap;
+    text-indent:-9999px;
+    margin-right: 10px;
+}
+#fb {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url(pngs/facebook.png) no-repeat center;
+    background-size: cover;
+    white-space: nowrap;
+    text-indent:-9999px;
+}
+#rechts p{
+    font-size: 12px;
+}
